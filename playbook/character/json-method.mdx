@@ -1,0 +1,75 @@
+---
+title: The JSON Method
+description: How to make AI characters that look like real people, not video game cutscenes
+---
+
+# The JSON Method for Ultra-Realistic Characters
+
+<Info>
+  Source: [https://x.com/knoxtwts/status/2023749545939624246](https://x.com/knoxtwts/status/2023749545939624246)
+</Info>
+
+## The problem
+
+When you type a simple prompt like *"realistic woman taking a selfie"* into Nano Banana, you get grey color grading, smooth plastic skin, and 4–5 colors max. It looks like AI immediately.
+
+## The fix — JSON prompting
+
+Instead of a text description, you give the AI a structured list of instructions. The most important parts:
+
+```json
+{
+  "face": {
+    "skin": {
+      "texture": "real human skin with visible pores, natural oiliness, subtle imperfections",
+      "freckles": "light to medium natural freckles, uneven and organic",
+      "finish": "no smoothing, no airbrushing, no beauty filters"
+    }
+  },
+  "camera": {
+    "device": "iPhone",
+    "lens": "front-facing camera",
+    "photo_characteristics": [
+      "minor digital noise",
+      "realistic smartphone dynamic range",
+      "slight motion softness"
+    ]
+  },
+  "style": {
+    "avoid": [
+      "CGI",
+      "AI-generated look",
+      "smooth plastic skin",
+      "studio lighting",
+      "beauty filters",
+      "perfect symmetry"
+    ]
+  }
+}
+```
+
+<Warning>
+  The `avoid` array at the bottom is doing the most work. Without it, Nano Banana defaults to making everything look polished — which is exactly what makes it look fake.
+</Warning>
+
+## Fix the color grading problem
+
+Standard Nano Banana prompts produce a washed out, grey-scale look. The fix:
+
+1. Find a reference photo on Pinterest that matches the vibe you want
+2. Upload it to Gemini
+3. Ask Gemini to *"extract a detailed JSON that recreates this image's color grading, lighting, and composition"*
+4. Paste that JSON into Nano Banana as your generation reference
+
+This one step takes output from *"obviously AI"* to *"wait, is this real?"*
+
+## Match demographics to your product
+
+| Product | Character |
+|---------|-----------|
+| Supplements for women 50+ | 55-year-old woman, kitchen setting, morning coffee |
+| Fitness supplement | Gym guy, 30, slightly sweaty, locker room background |
+| Skincare for teens | 19-year-old, bedroom, ring light reflection in eyes |
+| Weight loss for men | 40-year-old man, home office, slightly tired look |
+
+The JSON handles all of it. Just swap the age, gender, and environment fields.

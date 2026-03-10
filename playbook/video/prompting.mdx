@@ -1,0 +1,46 @@
+---
+title: Prompting Like a Director
+description: How to write video prompts that produce usable output
+---
+
+# Prompting Video Models Like a Director
+
+## The fundamental mistake
+
+Describing a scene instead of directing one.
+
+<CodeGroup>
+  ```text Wrong
+  "A woman uses skincare in her bathroom"
+  ```
+
+  ```text Right
+  "Medium shot, woman picks up amber glass serum bottle from white marble counter,
+  examines label, turns to face camera with slight smile, soft morning light from
+  left window, shallow depth of field, slight handheld camera sway"
+  ```
+</CodeGroup>
+
+The wrong version is narrative. The model doesn't know what to do with it. The right version is direction.
+
+## What every prompt needs
+
+- **Shot type:** medium shot, close-up, wide shot
+- **Subject action:** exactly what the person does
+- **Camera behavior:** handheld sway, static, dolly push, rack focus
+- **Lighting:** where it comes from, color temperature
+- **Depth of field:** shallow (blurry background) or deep (everything in focus)
+
+## Always include these
+
+```
+"NO over-reaction"        // without this, characters overact constantly
+"natural blinking"        // without this, characters stare like they're broken
+"slight handheld micro-jitter"  // makes it feel like a real phone video
+```
+
+## Cinematic motion verbs
+
+Use these to get natural movement:
+
+`dolly push` · `whip-pan` · `crash zoom` · `rack focus` · `tracking shot` · `slow cinematic push-in` · `shallow depth of field` · `micro-parallax`

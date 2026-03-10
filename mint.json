@@ -1,0 +1,119 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Forge AI",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#00d4b4",
+    "light": "#00d4b4",
+    "dark": "#00b89c"
+  },
+  "topbarLinks": [
+    {
+      "name": "Get Started",
+      "url": "https://forgeai.pro"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Try Forge AI Free",
+    "url": "https://forgeai.pro"
+  },
+  "tabs": [
+    {
+      "name": "Playbook",
+      "url": "playbook"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": ["introduction"]
+    },
+    {
+      "group": "The Full Pipeline",
+      "pages": [
+        "playbook/pipeline/overview",
+        "playbook/pipeline/checklist",
+        "playbook/pipeline/step-by-step",
+        "playbook/pipeline/vsl-broll"
+      ]
+    },
+    {
+      "group": "Character Generation",
+      "pages": [
+        "playbook/character/json-method",
+        "playbook/character/vision2json",
+        "playbook/character/before-after",
+        "playbook/character/ai-influencer"
+      ]
+    },
+    {
+      "group": "Hook Writing & Scripts",
+      "pages": [
+        "playbook/hooks/hook-patterns",
+        "playbook/hooks/ugc-scripts",
+        "playbook/hooks/yaps-vs-ugc"
+      ]
+    },
+    {
+      "group": "Video Generation",
+      "pages": [
+        "playbook/video/tool-selection",
+        "playbook/video/prompting",
+        "playbook/video/seedance",
+        "playbook/video/product-shots",
+        "playbook/video/first-last-frame"
+      ]
+    },
+    {
+      "group": "Voice & Audio",
+      "pages": [
+        "playbook/voice/two-step-pipeline",
+        "playbook/voice/multilingual"
+      ]
+    },
+    {
+      "group": "Lip Sync",
+      "pages": [
+        "playbook/lip-sync/comparison",
+        "playbook/lip-sync/ltx"
+      ]
+    },
+    {
+      "group": "Editing & Final Checks",
+      "pages": [
+        "playbook/editing/checklist",
+        "playbook/editing/pacing"
+      ]
+    },
+    {
+      "group": "Niche Ideas & Case Studies",
+      "pages": [
+        "playbook/niches/dental",
+        "playbook/niches/skeleton",
+        "playbook/niches/note-taking",
+        "playbook/niches/latam",
+        "playbook/niches/local-business"
+      ]
+    },
+    {
+      "group": "Business Models",
+      "pages": [
+        "playbook/business/agency-math",
+        "playbook/business/test-velocity",
+        "playbook/business/content-page"
+      ]
+    },
+    {
+      "group": "Reference",
+      "pages": ["playbook/tools/directory"]
+    }
+  ],
+  "footerSocials": {
+    "twitter": "https://twitter.com/forgeai",
+    "discord": "https://discord.gg/forgeai"
+  }
+}

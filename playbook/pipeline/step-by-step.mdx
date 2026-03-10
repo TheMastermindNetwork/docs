@@ -1,0 +1,65 @@
+---
+title: Complete Step-by-Step Guide
+description: Full walkthrough — competitive research to finished video
+---
+
+# Complete Step-by-Step Production Guide
+
+<Info>
+  Source: [https://x.com/adriansolarzz/status/2026923369933766681](https://x.com/adriansolarzz/status/2026923369933766681)
+</Info>
+
+## Phase 1 — Research before you write anything
+
+Before opening any AI tool, spend 30–60 minutes studying competitor ads. Find brands in your niche that have been running the same ad for **30–60+ days** — that means it's profitable.
+
+For each competitor ad:
+
+1. Go to [facebook.com/ads/library](https://facebook.com/ads/library) and find their ad
+2. Right-click the video → Inspect Element → find the video URL starting with `video.xx.fbcdn.net`
+3. Paste that URL in your browser → save the MP4
+4. Upload to Gemini and ask: *"Give me the complete word-for-word transcript of this video"*
+
+Document what you find: what's the hook type, what problem do they name, how do they introduce the product, what's the CTA.
+
+## Phase 2 — Write your script in Claude
+
+Paste the competitor transcript into Claude with this framework:
+
+```
+I need a UGC-style ad script that sounds like an authentic customer testimonial.
+Here is a competitor transcript as reference for the format and angle.
+My product is [description].
+My target customer is [specific description — age, situation, pain points].
+The tone should be casual and conversational like someone filming themselves on their phone.
+The script will be spoken verbatim by an AI actor.
+Open with a hook in the first 3–5 seconds that directly names the viewer's pain point.
+Build to the product as the solution.
+End with a natural recommendation CTA.
+```
+
+Expect 3–5 rounds of back and forth to get it right. That's normal.
+
+## Phase 3 — Record your voice (speech-to-speech)
+
+Read the script out loud into a USB microphone ($50–100 on Amazon). Record it as an MP3.
+
+**Why this matters:** Text-to-speech AI sounds too clean and perfect. Your real recorded voice — with its natural pauses, breaths, and inflections — gets mapped onto the AI actor's face. The result sounds like a real person because it uses real human speech patterns as the foundation.
+
+## Phase 4 — Generate your character in Nano Banana Pro
+
+Use JSON prompting (see [Character Generation](/playbook/character/json-method)). Generate the character image first, then animate it.
+
+## Phase 5 — Generate the video in Kling or Veo
+
+Upload your character image as the starting frame. Add your directorial prompt. Generate 3–5 variations and pick the best one.
+
+## Phase 6 — Assemble in CapCut
+
+1. Lay voiceover first
+2. Drop video clips in order
+3. Add captions
+4. Add background noise
+5. Add 2–3% film grain
+6. Export 1080p
+7. Compress via Telegram (upload → download → reupload)
